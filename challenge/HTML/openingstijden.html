@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet" type="salons/css">
-    <link rel="stylesheet" type="text/css" href="../CSS/salons.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet" type="openingstijden/css">
+    <link rel="stylesheet" type="text/css" href="../CSS/openingstijden.css">
     <title>Openingstijden</title>
 </head>
 <header><img src="../img/scissor-magic-logo.jpg" alt="sissors"></header>
-<body>
+<body> <!-- Begin Body -->
 <nav> <!-- Begin Navigatiebar -->
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="producten.html">Producten</a></li>
         <li><a href="salons.html">Salons</a></li>
-        <li><a href="openingstijden.html">Openinstijden</a></li>
+        <li><a href="openingstijden.html">Openingstijden</a></li>
     </ul>
 </nav><!-- Einde Navigatiebar -->
 <table border="1"> <!-- Begin Tabel -->
@@ -63,5 +63,37 @@
         <td colspan="1">14:30 - 16:00</td>
 </tr>
 </table> <!-- Einde Tabel -->
-</body>
+<form action="https://www.savatarian.com/html5/form.php" method="post"> <!-- Begin Formulier -->
+    <ul>
+        <li>
+            <label for="voornaam">Voornaam</label>
+            <input type="text" name="voornaam" required>
+        </li>
+        <li>
+            <label for="tussenvoegsel">Tussenvoegsel</label>
+            <input type="text" name="voornaam">
+        </li>
+        <li>
+            <label for="achternaam">Achternaam</label>
+            <input type="text" name="achternaam" required>
+        </li>
+        <li>
+            <label for="geslacht">Geslacht</label>
+            <input type="radio" name="geslacht" value="man">Man
+            <input type="radio" name="geslacht" value="vrouw">Vrouw
+        </li>
+        <li>
+            Geboortedatum: <input type="date" name="bday">
+        </li>
+        <li>
+            <label for="omschrijving">Omschrijving</label> <br>
+            <textarea rows="6" cols="40"></textarea>
+        </li>
+        <li>
+            <button type="submit">Annuleer</button>
+            <input type="submit" name="OK" value="OK">
+        </li>
+    </ul>
+</form> <!-- Begin Formulier -->
+</body> <!-- Einde Body -->
 </html>
